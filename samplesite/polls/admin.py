@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Question
+
+"""Question が admin インタフェースを持つことを admin に伝える"""
+admin.site.register(Question)
